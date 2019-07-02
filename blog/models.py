@@ -11,7 +11,7 @@ class Post(models.Model):
         return self.title
 
     def snippet(self):
-        return self.description[:100] + ' ...'
+        return self.body[:200] + ' ...'
 
 
 class Comment(models.Model):
